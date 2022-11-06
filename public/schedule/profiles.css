@@ -1,0 +1,47 @@
+body #day-profile-view {
+  display: block;
+}
+
+body #day-profile-view .profile-container {
+  max-width: 50%;
+  margin: 20px auto;
+  background-color: rgb(11, 246, 156);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+body #day-profile-view .profile-container h3 {
+  text-align: center;
+}
+
+body #day-profile-view .profile-container section {
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+body #day-profile-view .profile-container section a,
+body #day-profile-view .profile-container section a:visited,
+body #day-profile-view .profile-container section a:link {
+  text-decoration: underline;
+  color: rgb(115, 104, 87);
+
+}
+
+body #day-profile-view .profile-container .schedule .appointment .reason {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+}
+
+@media screen and (min-width: 640px) {
+  body #day-profile-view .profile-container {
+    max-width: 70%;
+  }
+  body #day-profile-view .profile-container section {
+    text-align: center;
+  }
+  body #day-profile-view .profile-container .schedule .appointment {
+    padding: 5px;
+  }
+}
